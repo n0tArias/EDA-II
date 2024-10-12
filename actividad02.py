@@ -1,3 +1,7 @@
+###
+    Authors: n0tArias, Danonino
+###
+
 class Vertice:
     def __init__(self, n):
         self.nombre = n
@@ -62,26 +66,17 @@ class Grafo:
 
 class Controladora:
     def main(self):
-        # Se crea un objeto 'g' de la clase Grafo, el grafo
         g = Grafo()
-        # Se crea un objeto 'a' de la clase Vertice, un vértice
         a = Vertice('A')
-        # Se agrega el vértice al grafo
         g.agregarVertice(a)
-
-        # Este bucle evitará repetición es para agregar
-        # todos los vértices y no hacerlo uno a uno
         for i in range(ord('A'), ord('K')):
             g.agregarVertice(Vertice(chr(i)))
 
-        # Se declara una lista que contiene las aristas del grafo
         edges = ['AB', 'AC', 'AD', 'BC', 'BD', 'OC', 'BE', 'CG', 'CH', 'CE', 'EG', 'FQ', 'FJ', 'GH', 'GJ', 'HI', 'JI']
 
-        # Se agregan las aristas al grafo
         for edge in edges:
             g.agregarArista(edge[0], edge[1])
 
-        # Se imprime el grafo, como lista de adyacencia
         for i in range(ord('A'), ord('K')):
             g.bfs(Vertice(chr(i)))
 
