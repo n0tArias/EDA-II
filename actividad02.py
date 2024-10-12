@@ -1,5 +1,5 @@
 ###
-    Authors: n0tArias, Danonino
+Authors: n0tArias, Danonino
 ###
 
 class Vertice:
