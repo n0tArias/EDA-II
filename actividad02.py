@@ -1,6 +1,6 @@
-###
+"""
 Authors: n0tArias, Danonino
-###
+"""
 
 class Vertice:
     def __init__(self, n):
